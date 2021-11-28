@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+
+<div class="header">
+    <h1>Carteira Digital de Vacina</h1>
+</div>
+<div class="main-inicio" >   
+    <div class="left-usuario">
+        <h1>Usuário População</h1>
+        <img src="{{ url_for('static', filename='imagens/zeGotinhaP.png') }}" > 
+        <div>
+            <a href="login.html"><button>Entrar</button></a>
+        </div>
+    </div>
+    <div class="rigth-inicio">
+        <h1>Usuário Saúde</h1>
+        <img src="{{ url_for('static', filename='imagens/zeGotinhaS.png') }}" > 
+        <div>
+            <a href="PagConstrucao.html"><button>Entrar</button></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
